@@ -7,7 +7,7 @@ import {
 } from "../../Redux/Actions/CounterAction";
 
 const Counter = () => {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.counterReducer.count);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
